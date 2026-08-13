@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://acubetech.netlify.app/sitemap.xml

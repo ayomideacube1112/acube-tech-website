@@ -1,0 +1,9 @@
+{
+  "name": "acube-tech-v5",
+  "private": true,
+  "version": "5.0.0",
+  "description": "A'Cube Tech V5 website with OpenAI-powered assistant",
+  "scripts": {
+    "build": "echo Static site ready for Netlify"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "A'Cube Tech",
+  "short_name": "A'Cube Tech",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06170d",
+  "theme_color": "#06170d",
+  "description": "A'Cube Tech admission, online, design and technology services."
+}
