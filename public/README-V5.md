@@ -14,7 +14,7 @@ After deploying this site, open:
 Site configuration → Environment variables
 
 Add:
-OPENAI_API_KEY = your OpenAI API key
+YOUR_API_KEY = your OpenAI API key
 
 Optional:
 OPENAI_MODEL = gpt-5.6-terra
