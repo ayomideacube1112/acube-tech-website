@@ -1,8 +1,0 @@
-{
-  "name": "acube-tech-v5",
-  "private": true,
-  "version": "5.0.0",
-  "scripts": {
-    "build": "echo A'Cube Tech V5 static site ready"
-  }
-}
