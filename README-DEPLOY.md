@@ -12,7 +12,7 @@
 4. Build command: `npm run build`
 5. Publish directory: `public`
 6. Functions directory: `netlify/functions`
-7. Add `YOUR OPENAI_API_KEY` as a Netlify environment variable.
+7. 
 8. Optional: add `OPENAI_MODEL` if you want a different supported model.
 9. Deploy/redeploy.
 
