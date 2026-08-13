@@ -9,7 +9,7 @@ exports.handler = async (event) => {
   if (event.httpMethod === "OPTIONS") return { statusCode: 204, headers, body: "" };
   if (event.httpMethod !== "POST") return { statusCode: 405, headers, body: JSON.stringify({ error: "Method not allowed" }) };
 
-  const apiKey = process.env.OPENAI_API_KEY;
+  const apiKey = process.env.YOUR_API_KEY;
   if (!apiKey) {
     return { statusCode: 500, headers, body: JSON.stringify({ error: "OPENAI_API_KEY is not configured in Netlify." }) };
   }
