@@ -1,25 +1,19 @@
-# A'Cube Tech V5
+# A'Cube Tech — n8n AI Website
 
-## What changed
-- Added the supplied A'Cube Tech logo to the site.
-- Removed the flyer and all flyer navigation/sections.
-- Primary WhatsApp number is 09018038314.
-- Secondary phone number remains 08114885904.
-- Replaced the old service-matcher assistant with a real OpenAI-powered general AI assistant.
-- The assistant can answer general questions, explain topics, solve problems, help with writing/study/programming tasks, and guide users to A'Cube Tech services.
-- The OpenAI API key is kept server-side in a Netlify Function; it is not placed in the browser.
+## AI assistant
 
-## Netlify setup for the AI
-After deploying this site, open:
-Site configuration → Environment variables
+The website chat is connected to the working A'Cube bot in n8n Cloud. The n8n workflow uses Google Gemini and Simple Memory.
 
-Add: OPENAI_API_KEY = your OpenAI API key
+The browser sends each message to `/.netlify/functions/chat`. The Netlify Function securely forwards the message to the n8n Chat Trigger webhook. No OpenAI API key is required for this website.
 
-Optional:
-OPENAI_MODEL = gpt-5.6-terra
+## Current n8n webhook
 
-Then redeploy the site so the function receives the variable.
+`https://ayomideacube.app.n8n.cloud/webhook/fdc648ee-7b19-444b-a3f9-92c597b3cb2a/chat`
 
-Important: do not paste the OpenAI API key into index.html or JavaScript. Keep it as a Netlify environment variable.
+## Deployment
 
-The AI uses OpenAI's Responses API through `netlify/functions/chat.js`.
+- Build command: `npm run build`
+- Publish directory: `public`
+- Functions directory: `netlify/functions`
+
+The Netlify Function uses the n8n webhook above by default. If the webhook ever changes, set `N8N_CHAT_WEBHOOK_URL` in Netlify environment variables and redeploy.
